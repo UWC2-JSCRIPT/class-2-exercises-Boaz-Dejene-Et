@@ -54,7 +54,7 @@ console.log(array)
 
 const email = "foo@bar.baz";
 
-const vgv = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+const vgv = /.+@.+\..+/g;
 const matchs = 'foo@bar.baz'.match(vgv);
 
 console.log(matchs)
