@@ -54,10 +54,10 @@ console.log(array)
 
 const email = "foo@bar.baz";
 
-const vgv = /.+@.+\..+/g;
-const matchs = 'foo@bar.baz'.match(vgv);
+const regularEx = /.+@.+\..+/g;
+const matchs = email.match(regularEx);
 
-console.log(matchs)
+console.log(matchs ? true : false)
 
 // 7. You are given an assignmentDate as a string in the format "month/day/year"
 // i.e. '1/21/2019' - but this could be any date.
